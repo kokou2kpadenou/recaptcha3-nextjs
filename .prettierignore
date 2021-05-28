@@ -1,0 +1,6 @@
+build
+out
+.next
+.git
+
+*.html
