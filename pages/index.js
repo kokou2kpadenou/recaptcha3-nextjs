@@ -124,7 +124,7 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <a
-          href="https://www.kpadenou.net"
+          href="https://github.com/kokou2kpadenou/recaptcha3-nextjs"
           target="_blank"
           rel="noopener noreferrer"
         >
