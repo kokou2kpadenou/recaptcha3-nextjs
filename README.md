@@ -10,6 +10,14 @@ First, clone this repository:
 git clone https://github.com/kokou2kpadenou/recaptcha3-nextjs.git
 ```
 
+After cloning, go to the project directory and install the packages:
+
+```bash
+npm install
+or 
+yarn install
+```
+
 Second, create the .env.local file in the project root directory. You will need to [sign up](https://www.google.com/recaptcha/admin) for an API key pair for the project. Use the following template to complete the .env.local file.
 
 ```env
