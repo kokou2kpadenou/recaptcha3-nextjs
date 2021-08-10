@@ -54,6 +54,7 @@ export default function Home() {
               if (response.ok) {
                 const json = await response.json();
                 setResult(json);
+                setCompleted(true);
               } else {
                 throw new Error(response.statusText);
               }
@@ -62,10 +63,11 @@ export default function Home() {
             }
 
             /* End of the sending data */
-
-            setProcessing(false);
-            setCompleted(true);
+          })
+          .catch((error) => {
+            setResult({ message: error.message });
           });
+        setProcessing(false);
       });
     }
   };
