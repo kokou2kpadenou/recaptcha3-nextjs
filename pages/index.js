@@ -2,6 +2,7 @@ import Proptypes from "prop-types";
 import { useState, useEffect } from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import Script from "next/script";
 
 const SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITEKEY;
 
@@ -78,10 +79,11 @@ export default function Home() {
         <title>reCaptcha v3 with Next.js</title>
         <meta name="description" content="reCaptcha v3 in Next.js" />
         <link rel="icon" href="/favicon.ico" />
-        <script
-          src={`https://www.google.com/recaptcha/api.js?render=${SITE_KEY}`}
-        />
       </Head>
+
+      <Script
+        src={`https://www.google.com/recaptcha/api.js?render=${SITE_KEY}`}
+      />
 
       <main className={styles.main}>
         <h1 className={styles.title}>reCaptcha v3 with Next.js</h1>

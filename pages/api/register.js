@@ -1,4 +1,4 @@
-export default async (req, res) => {
+const register = async (req, res) => {
   const SECRET_KEY = process.env.RECAPTCHA_SECRETKEY;
 
   const { name, email, recaptchaResponse } = req.body;
@@ -15,3 +15,5 @@ export default async (req, res) => {
     res.status(400).json(e.error);
   }
 };
+
+export default register;
