@@ -49,7 +49,7 @@ export default function Home() {
             try {
               const response = await fetch("/api/register", {
                 method: "POST",
-                headers: { "Content-Type": "application/json;chaset=utf-8" },
+                headers: { "Content-Type": "application/json;charset=utf-8" },
                 body: JSON.stringify(body),
               });
               if (response.ok) {
